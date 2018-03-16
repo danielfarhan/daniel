@@ -1,0 +1,12 @@
+.profil{
+	margin-top: 60px;
+	margin-bottom: 20px;
+	margin-left: 32%;
+	align-content: center;
+	width: 200px;
+	height: auto;
+}
+
+.border-curved{
+	border-radius: 10px;
+}

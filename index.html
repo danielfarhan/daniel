@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+
+	<link rel="stylesheet" type="text/css" href="index/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url(index/background_login.jpg)">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-26">
+						Welcome
+					</span>
+					<br>
+					<span class="login100-form-title p-b-26" style="font-size: 22px">
+						Verify Your identity
+					</span>
+					<br>
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn" onclick="return myFunction()">
+								Next
+							</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+	function myFunction() {
+		var input = prompt("Enter Your Name");
+
+		if(input == "Daniel" || input == "daniel" || input == "DANIEL"){
+			alert("Welcome Daniel");
+			window.location.href ="index/index.html";
+			return false;
+		}
+		else{
+			alert("Sorry, You don't Have Access");
+			window.location="index/error.html";
+			return false;
+		}
+	}
+</script>
+
+</body>
+</html>
